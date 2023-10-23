@@ -136,3 +136,15 @@ body{
 .nav-link i{
   margin-right: 6px;
 }
+@media screen and (min-width : 1344px) and (max-width : 1493px) {
+    .nav-link a{
+        margin-right: 7px;
+    padding: 2px 43px 2px 0;
+    }
+}
+@media screen and (min-width : 1280px) and (max-width : 1344px) {
+    .nav-link a{
+        margin-right: 7px;
+    padding: 2px 35px 2px 0;
+    }
+}
