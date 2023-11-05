@@ -1,10 +1,10 @@
-$(document).ready(function(){
-  $('.slider').slick({
+$(document).ready(function () {
+  $(".slider").slick({
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4, 
-     autoplay: true,
-     arrows:false,
+    slidesToScroll: 4,
+    autoplay: true,
+    arrows: false,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -16,10 +16,10 @@ $(document).ready(function(){
       },
     ],
   });
-  
-  $('.single-item').slick({
+
+  $(".single-item").slick({
     autoplay: true,
-    arrows:false,
+    arrows: false,
     infinite: true,
     autoplaySpeed: 2000,
   });
