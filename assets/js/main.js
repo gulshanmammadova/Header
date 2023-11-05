@@ -24,3 +24,26 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
   });
 });
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.sticky-header');
+  const scrollPosition = window.scrollY;
+console.log('salam')
+  if (scrollPosition > 0) {
+      header.classList.add('visible');
+  } else {
+      header.classList.remove('visible');
+  }
+});
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        scrollToTopButton.style.bottom = '20px';
+    } else {
+        scrollToTopButton.style.bottom = '-60px';
+    }
+});
+
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

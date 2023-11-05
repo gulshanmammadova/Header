@@ -991,3 +991,53 @@ a.author:hover {
 }
 
 /* Parallax */
+
+
+.sticky-header {
+    position: fixed;
+    top: -200px; /* Initially hides the header above the viewport */
+   background-color: white;
+    transition: top 0.3s; /* Add a smooth transition effect */
+}
+
+.content {
+    margin-top: 100px; /* Provides space for the sticky header */
+   
+    z-index: 99999999999999;
+}
+.sticky-header .nav-link{
+    width: 70%;
+}
+.sticky-header .nav-link a{
+    margin-right: 1%;
+}
+.sticky-header.visible {
+    top: 0;
+}
+
+.sticky-header{
+    width: 100%;
+    z-index: 99999999999;
+}
+
+
+
+.scroll-to-top {
+    background-color: #007aff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: -60px; /* Initially hides the button below the viewport */
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: bottom 0.3s; /* Add a smooth transition effect */
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}
